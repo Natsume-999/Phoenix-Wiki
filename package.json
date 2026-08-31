@@ -40,5 +40,9 @@
   },
   "engines": {
     "node": ">=16.14"
+  },
+  "overrides": {
+    "webpack": "5.89.0",
+    "cheerio": "1.0.0-rc.12"
   }
 }

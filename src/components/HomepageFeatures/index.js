@@ -4,39 +4,39 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '帮助须知',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '一站式整合',
+    Icon: '🧩',
     description: (
       <>
-        保持良好的素质是我们的基本原则
+        封禁、兑换码、出售、皮肤、清理、边界、邀请、交易……十余个模块融合一个 jar，命令与配置互不干扰。
       </>
     ),
   },
   {
-    title: '(∪.∪)',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '统一数据库',
+    Icon: '🗄️',
     description: (
       <>
-        zzz...
+        SQLite 零配置开箱即用，一键切换 MySQL 供群组服共享数据；封禁、兑换码、邀请分表隔离，备份只碰一个文件。
       </>
     ),
   },
   {
-    title: '(∪.∪)',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Kether 驱动',
+    Icon: '⚡',
     description: (
       <>
-        zzz...
+        所有执行类配置（奖励、封禁脚本、边界事件）统一为 Kether 脚本行，写法一处学会处处可用。
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Icon, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <span style={{fontSize: '4rem'}} role="img">{Icon}</span>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
