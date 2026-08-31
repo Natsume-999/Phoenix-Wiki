@@ -1,0 +1,22 @@
+{
+  "link.title.加入我们": {
+    "message": "加入我們",
+    "description": "The title of the footer links column with title=加入我们 in the footer"
+  },
+  "link.title.提交建议": {
+    "message": "提交建議",
+    "description": "The title of the footer links column with title=提交建议 in the footer"
+  },
+  "link.item.label.问题反馈": {
+    "message": "問題回報",
+    "description": "The label of footer link with label=问题反馈 linking to https://github.com/Natsume-999/Phoenix-Wiki/issues"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Natsume-999/Phoenix-Wiki"
+  },
+  "copyright": {
+    "message": "Copyright  2026 Natsume-999, All Rights Reserved.",
+    "description": "The footer copyright"
+  }
+}

@@ -23,6 +23,13 @@ sidebar_position: 1
 | PhoenixInvite | 邀请激励系统 | `/phoenixinvite` | `plugins/PhoenixInvite/` |
 | PhoenixTrade | 玩家对玩家交易 | `/phoenixtrade` | `plugins/PhoenixTrade/` |
 
+## 文档导航
+
+- 第一次搭服务器 → [环境准备与安装](./install)
+- 改配置、备份、迁移数据库 → [配置基础与重载规则](./configuration)
+- 写奖励/封禁脚本 → [Kether 脚本入门](./kether)
+- 出问题了 → [故障排查](./troubleshooting) 与 [常见问题](./faq)
+
 ## 环境要求
 
 | 项目 | 要求 |

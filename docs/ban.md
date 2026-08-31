@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # PhoenixBan 封禁与白名单
@@ -39,4 +39,4 @@ sidebar_position: 3
 
 ## 数据
 
-表 `phoenix_ban / phoenix_warn / phoenix_ban_history`，与兑换码、邀请共用全局数据源（见[快速开始](/start)）。
+表 `phoenix_ban / phoenix_warn / phoenix_ban_history`，与兑换码、邀请共用全局数据源（见[快速开始](./start)）。

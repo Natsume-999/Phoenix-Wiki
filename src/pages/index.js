@@ -8,7 +8,8 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const {siteConfig, i18n} = useDocusaurusContext();
+  const isTw = i18n.currentLocale === 'zh-Hant-TW';
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -18,7 +19,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/intro">
-            点击查看
+            {isTw ? '點擊查看' : '点击查看'}
           </Link>
         </div>
       </div>
@@ -27,11 +28,12 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const {siteConfig, i18n} = useDocusaurusContext();
+  const isTw = i18n.currentLocale === 'zh-Hant-TW';
   return (
     <Layout
-      title={`主页`}
-      description="Description will go into a meta tag in <head />">
+      title={isTw ? '主頁' : '主页'}
+      description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 12
 ---
 
 # PhoenixInvite 邀请激励系统

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 11
 ---
 
 # 小模块：红屏 / 无缝切换 / 消息转发

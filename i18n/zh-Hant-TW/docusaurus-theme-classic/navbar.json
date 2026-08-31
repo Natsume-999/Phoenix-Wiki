@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Phoenix-Wiki",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.开始": {
+    "message": "開始",
+    "description": "Navbar item with label 开始"
+  }
+}
