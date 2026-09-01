@@ -31,6 +31,8 @@ Phoenix 裡所有「執行類」配置都是 **Kether 指令碼**：封禁/解�
 | `actionbar "提示文字"` | 發 actionbar |
 | `sound "ENTITY_PLAYER_LEVELUP"` | 播放音效 |
 | `wait 20 ticks` then `...` | 延遲 20 刻後再執行後續 |
+| `show popup "名"` | 顯示 BetterHud popup（需裝 BetterHud，見[訊息分流橋](/misc)） |
+| `hide popup "名"` | 隱藏 BetterHud popup |
 
 ## 實戰示例
 
@@ -63,6 +65,12 @@ unban:
   scripts:
     - 'command "broadcast &a{player} 已解除封禁"'
 ```
+
+## 模組專屬命名空間
+
+部分模組註冊了自己的 Kether 動作，可在任何腳本裡呼叫：
+
+- `phoenixlevel_*`：等級組的查詢與增減（`phoenixlevel_get_level <玩家> "組ID"`、`phoenixlevel_add_exp <玩家> "組ID" <數量>` 等），完整列表見 [PhoenixLevel](/level#命名空間動作-phoenixlevel)
 
 ## 排錯
 

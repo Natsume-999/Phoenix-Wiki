@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 介绍
 
-**Phoenix** 是一款为 Paper / Leaf 1.21.11 服务端打造的**一体化整合插件**，把服务器常用的十多个功能融合进一个 jar：封禁管理、兑换码、出售系统、物品皮肤、周期清理、世界边界、邀请激励、玩家交易……全部模块共用一个插件本体，但**每个模块都拥有独立的配置目录与命令**，互不干扰。
+**Phoenix** 是一款为 Paper / Leaf 1.21.11 服务端打造的**一体化整合插件**，把服务器常用的十多个功能融合进一个 jar：封禁管理、兑换码、出售系统、物品皮肤、周期清理、世界边界、邀请激励、玩家交易、会员等级……全部模块共用一个插件本体，但**每个模块都拥有独立的配置目录与命令**，互不干扰。
 
 ## 模块一览
 
@@ -22,6 +22,7 @@ sidebar_position: 1
 | PhoenixMessageBridge | 系统消息转发 | 无（配置驱动） | `plugins/PhoenixMessageBridge/` |
 | PhoenixInvite | 邀请激励系统 | `/phoenixinvite` | `plugins/PhoenixInvite/` |
 | PhoenixTrade | 玩家对玩家交易 | `/phoenixtrade` | `plugins/PhoenixTrade/` |
+| PhoenixLevel | 会员等级（多等级组） | `/phoenixlevel` | `plugins/PhoenixLevel/` |
 
 ## 文档导航
 

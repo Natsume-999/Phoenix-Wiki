@@ -43,6 +43,25 @@ sidebar_position: 15
 |---|---|
 | `%phoenixtrade_stats%` | 玩家是否接受交易（true / false） |
 
+## %phoenixlevel_*%（会员等级）
+
+格式：`%phoenixlevel_<等级组>_<参数>%`。玩家不在该组或数据未加载返回 `N/A`。完整说明见 [PhoenixLevel](/level)。
+
+| 变量 | 说明 |
+|---|---|
+| `%phoenixlevel_Example_level%` | 当前等级 |
+| `%phoenixlevel_Example_display%` / `name%` | 等级组显示名 / ID |
+| `%phoenixlevel_Example_levelname%` | 当前等级显示名（`lastlevelname` / `nextlevelname` 同理） |
+| `%phoenixlevel_Example_minlevel%` / `maxlevel%` | 等级上下限 |
+| `%phoenixlevel_Example_exp%` | 当前等级内经验 |
+| `%phoenixlevel_Example_nextlevelexp%` | 升到下一级所需经验 |
+| `%phoenixlevel_Example_levelprogresspercent%` / `expprogresspercent%` | 进度百分比（整数） |
+| `%phoenixlevel_Example_levelprogressbar%` / `expprogressbar%` | 进度条（可自定义字符/长度） |
+| `%phoenixlevel_Example_hasmember%` | 是否成员（true/false） |
+| `%phoenixlevel_Example_levelexpfrom_5%` | 从 5 级到当前等级共需经验 |
+| `%phoenixlevel_Example_levelexpto_10%` | 从当前等级到 10 级还需经验 |
+| `%phoenixlevel_Example_levelexpfromto_5_10%` | 从 5 级到 10 级共需经验 |
+
 ## %cyuclear_*%（周期清理）
 
 常用变量（完整列表以 clear 模块内 PapiHook 为准）：

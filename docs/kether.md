@@ -31,6 +31,8 @@ Phoenix 里所有「执行类」配置都是 **Kether 脚本**：封禁/解封�
 | `actionbar "提示文字"` | 发 actionbar |
 | `sound "ENTITY_PLAYER_LEVELUP"` | 播放音效 |
 | `wait 20 ticks` then `...` | 延迟 20 刻后再执行后续 |
+| `show popup "名"` | 显示 BetterHud popup（需装 BetterHud，见[消息分流桥](/misc)） |
+| `hide popup "名"` | 隐藏 BetterHud popup |
 
 ## 实战示例
 
@@ -63,6 +65,12 @@ unban:
   scripts:
     - 'command "broadcast &a{player} 已解除封禁"'
 ```
+
+## 模块专属命名空间
+
+部分模块注册了自己的 Kether 动作，可在任何脚本里调用：
+
+- `phoenixlevel_*`：等级组的查询与增减（`phoenixlevel_get_level <玩家> "组ID"`、`phoenixlevel_add_exp <玩家> "组ID" <数量>` 等），完整列表见 [PhoenixLevel](/level#命名空间动作-phoenixlevel)
 
 ## 排错
 

@@ -78,3 +78,12 @@ sidebar_position: 16
 |---|---|
 | `phoenixtrade.sendtrade` / `phoenixtrade.accept` / `phoenixtrade.toggle` | true |
 | `phoenixtrade.trade` / `phoenixtrade.test` / `phoenixtrade.reload` | OP |
+
+## PhoenixLevel
+
+| 許可權 | 預設 |
+|---|---|
+| `phoenixlevel.command.use` | OP |
+| `phoenixlevel.command.reload` | OP |
+| `phoenixlevel.levelgroup` | OP |
+| `phoenixlevel.member` | OP（含改等級/經驗寫操作，謹慎授予） |

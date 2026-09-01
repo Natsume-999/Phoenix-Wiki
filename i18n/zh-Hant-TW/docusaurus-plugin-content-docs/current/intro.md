@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 介紹
 
-**Phoenix** 是一款為 Paper / Leaf 1.21.11 服務端打造的**一體化整合外掛**，把伺服器常用的十多個功能融合進一個 jar：封禁管理、兌換碼、出售系統、物品皮膚、週期清理、世界邊界、邀請激勵、玩家交易……全部模組共用一個外掛本體，但**每個模組都擁有獨立的配置目錄與命令**，互不干擾。
+**Phoenix** 是一款為 Paper / Leaf 1.21.11 服務端打造的**一體化整合外掛**，把伺服器常用的十多個功能融合進一個 jar：封禁管理、兌換碼、出售系統、物品皮膚、週期清理、世界邊界、邀請激勵、玩家交易、會員等級……全部模組共用一個外掛本體，但**每個模組都擁有獨立的配置目錄與命令**，互不干擾。
 
 ## 模組一覽
 
@@ -22,6 +22,7 @@ sidebar_position: 1
 | PhoenixMessageBridge | 系統訊息轉發 | 無（配置驅動） | `plugins/PhoenixMessageBridge/` |
 | PhoenixInvite | 邀請激勵系統 | `/phoenixinvite` | `plugins/PhoenixInvite/` |
 | PhoenixTrade | 玩家對玩家交易 | `/phoenixtrade` | `plugins/PhoenixTrade/` |
+| PhoenixLevel | 會員等級（多等級組） | `/phoenixlevel` | `plugins/PhoenixLevel/` |
 
 ## 文件導航
 

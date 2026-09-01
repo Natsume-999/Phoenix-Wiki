@@ -73,3 +73,17 @@ scripts:
   title:
     - 'command "say 显示了标题: {message}"'
 ```
+
+### popup 的 Kether 动作
+
+除标签外，任何 Kether 脚本里都可以直接控制 BetterHud popup（比如在副本开始动作里弹出 boss 血条 popup，结束时隐藏）：
+
+```yaml
+# 显示名为「公告」的 popup
+- 'show popup "公告"'
+# 隐藏
+- 'hide popup "公告"'
+```
+
+- 需要安装 **BetterHud** 且 popup 名存在；不存在时静默跳过
+- 与 `[popup:公告]` 标签的区别：标签作用于「一条被拦截的消息」，Kether 动作可以在**任何模块的任何脚本**里调用
