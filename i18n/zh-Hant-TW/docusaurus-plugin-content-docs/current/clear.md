@@ -24,6 +24,9 @@ sidebar_position: 9
 | `/phoenixclear run <批次> [details\|reasons]` | 批次詳情 | `cyuclear.admin` |
 | `/phoenixclear recover <批次>` | 恢復指定批次物品 | `cyuclear.admin` |
 | `/phoenixclear hotspots [頁]` | 熱點區塊 | `cyuclear.admin` |
+| `/phoenixclear here [items\|entities\|all]` | 只清理自己腳下這一個區塊 | `cyuclear.admin` |
+| `/phoenixclear tp <世界> <x> [y] <z>` | 安全傳送到座標（也可寫區塊座標） | `cyuclear.admin` |
+| `/phoenixclear back` | 回到上次傳送前的位置 | `cyuclear.admin` |
 | `/phoenixclear cancel` | 停止當前清理 | `cyuclear.admin` |
 | `/phoenixclear doctor` | 配置自檢 | `cyuclear.admin` |
 | `/phoenixclear snapshot` | 備份當前配置 | `cyuclear.admin` |
@@ -40,6 +43,41 @@ sidebar_position: 9
 ## 虛空垃圾桶
 
 被週期清理的物品（可配置）會進入虛空桶，玩家在時限內用 `/phoenixclear bin` 自助取回——既減負又減少糾紛。桶的開啟時段、容量、堆疊模式在 `void-bin/` 與 config 中配置。
+
+## 處理卡服現場（熱點區塊）
+
+伺服器某處堆了幾千個掉落物或刷怪塔炸了，不必全服大掃除，可以只處理那一塊：
+
+1. `/phoenixclear hotspots` 看哪些區塊被判定為熱點（觸發次數、已清數量、是否處於熔斷攔截）；
+2. 點開某個熱點的詳情，按**「前往該區塊」**（終界珍珠圖示）直接安全傳送過去；
+3. 到現場後 `/phoenixclear here` 只清理腳下這一個區塊，想只清掉落物就 `here items`，只清實體就 `here entities`；
+4. 處理完 `/phoenixclear back` 回到原來的位置。
+
+區塊過載的提示訊息裡，管理員會額外看到一個**「前往查看」**按鈕，點一下直接傳送到出事的座標。
+
+### 傳送為什麼是「安全」的
+
+傳送前會先找一個能站住的位置：腳下是實心方塊、頭頂兩格是空的，並且避開岩漿、火、仙人掌、岩漿塊。地獄會從 120 格往下逐格找（避免直接落在岩漿湖或頂層基岩上）。落地後預設有 5 秒免傷保護，防止剛傳送過去就被摔死或被怪打死。
+
+相關配置在 `config.yml`：
+
+```yaml
+teleport:
+  landing-protection:
+    enabled: true          # 落地免傷保護
+    duration-seconds: 5    # 保護幾秒
+    notify: true           # 抵消傷害時是否提示
+  back:
+    enabled: true          # 是否允許 /phoenixclear back
+    timeout-seconds: 300   # 原點記憶多久過期（0 = 直到玩家離線）
+
+here-cleanup:
+  enabled: true            # 是否允許 /phoenixclear here
+```
+
+:::note 舊伺服器看不到這兩節配置
+這兩節是新增的，而配置版本號沒變，所以**已有的 config.yml 不會自動補上這些行**。不改也能用（走上面寫的預設值）；想調整就照上面手動加到 `config.yml` 裡，或者刪掉 config.yml 讓它重新生成（會丟自訂內容，記得先備份）。
+:::
 
 ## 配置目錄
 

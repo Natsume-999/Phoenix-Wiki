@@ -74,3 +74,9 @@ sidebar_position: 15
 | `%cyuclear_last_items%` / `%cyuclear_last_entities%` | 上次清理數量 |
 | `%cyuclear_bin_open%` / `%cyuclear_bin_countdown_text%` | 虛空桶狀態 |
 | `%cyuclear_run_status%` | 當前批次狀態 |
+| `%cyuclear_chunk_world%` / `%cyuclear_chunk_x%` / `%cyuclear_chunk_z%` | 玩家當前所在世界與區塊座標 |
+| `%cyuclear_chunk_state%` | 當前區塊狀態（正常 / 熱點 / 熔斷） |
+| `%cyuclear_chunk_is_hotspot%` / `%cyuclear_chunk_is_breaker%` | 當前區塊是否熱點 / 是否正在熔斷攔截 |
+| `%cyuclear_chunk_triggers%` / `%cyuclear_chunk_cleaned_total%` | 當前區塊累計觸發次數 / 歷史清理總量 |
+| `%cyuclear_hotspots_total%` / `%cyuclear_hotspots_breakers%` | 全服熱點區塊數 / 熔斷區塊數 |
+| `%cyuclear_has_breakers%` | 全服是否存在熔斷區塊（true/false） |
